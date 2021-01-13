@@ -4,7 +4,7 @@ motion:
   uris:
     - "http://WCM_CAM:8080"
   cam_names:
-    WCM_MOTION:
+    WCM_CAM:
       0: WCM_CAM_NAME
 telegram:
   token: "TOKEN"
