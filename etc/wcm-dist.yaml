@@ -1,0 +1,22 @@
+http_server:
+  listen: "0.0.0.0:20000"
+motion:
+  uris:
+    - "http://WCM_MOTION:8080"
+  cam_names:
+    WCM_MOTION:
+      0: WCM_CAM_NAME
+telegram:
+  token: "TOKEN"
+  accesses:
+    users:
+      USER_NAME: TELEGRAM_CHAT_OR_USER_ID
+      USER_NAME2: TELEGRAM_CHAT_OR_USER_ID
+    permits:
+      ADMIN:
+        - USER_NAME
+      USER:
+        - USER_NAME2
+#daemon: false
+#proxy: "http://proxy:8118"
+pid: /var/run/wcm.pid

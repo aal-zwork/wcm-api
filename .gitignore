@@ -1,3 +1,10 @@
 __pycache__
-.idea
-tests/wcm.yaml
+/.idea
+
+/etc/wcm.yaml
+!/etc/*-dist.yaml
+
+/*env
+!/example*env
+
+/docker-compose.override.yaml

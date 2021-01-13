@@ -11,7 +11,7 @@ class Motion(MotionBase):
         super(Motion, self).__init__(uri)
         self.cams = Cams()
         try:
-            resp = requests.get(self.uri)
+            resp = requests.get(self.uri, timeout=2)
         except Exception as e:
             self._logger.warning('HTTP Error(%s)' % e)
         else:

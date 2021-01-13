@@ -86,7 +86,7 @@ class ApiAclCmdCamStart(ApiAclCmdCam):
                 msg += '\n'
                 self._logger.error("Problem with a camera %s (%s)" % (cam.print_name, str(e)))
             else:
-                msg = '%s запуск...' % cam.print_name
+                msg += '%s запуск...' % cam.print_name
                 msg += '\n'
         if msg == "":
             msg = "Камер для запуска нет"
@@ -110,7 +110,7 @@ class ApiAclCmdCamPause(ApiAclCmdCam):
                 msg += '\n'
                 self._logger.error("Problem with a camera %s (%s)" % (cam.print_name, str(e)))
             else:
-                msg = '%s остановка...' % cam.print_name
+                msg += '%s остановка...' % cam.print_name
                 msg += '\n'
         if msg == "":
             msg = "Камер для остановки нет"
@@ -143,7 +143,7 @@ class ApiAclCmdCamScr(ApiAclCmdCam):
                 msg += '\n'
                 self._logger.error("Problem with a camera %s (%s)" % (cam.print_name, str(e)))
             else:
-                msg = '%s получение скриншота...' % cam.print_name
+                msg += '%s получение скриншота...' % cam.print_name
                 msg += '\n'
         if msg == "":
             msg = "Камер для скриншота нет"

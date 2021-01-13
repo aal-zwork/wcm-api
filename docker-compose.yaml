@@ -1,0 +1,12 @@
+version: "3.3"
+
+services:
+    api:
+        build: ./
+        restart: always
+        env_file:
+            - api.env
+        volumes:
+            - ./etc:/api-etc
+        ports:
+            - "${WCM_API_PORT:-20000}:${WCM_API_PORT:-20000}"
