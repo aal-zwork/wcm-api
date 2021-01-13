@@ -2,7 +2,7 @@ http_server:
   listen: "0.0.0.0:20000"
 motion:
   uris:
-    - "http://WCM_MOTION:8080"
+    - "http://WCM_CAM:8080"
   cam_names:
     WCM_MOTION:
       0: WCM_CAM_NAME
